@@ -1,0 +1,12 @@
+.modal-video-movie-wrap {
+    max-width: 20px!important;
+    max-height: 75vh !important; /* Set height relative to viewport height */
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  .modal-video-body {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+  }
