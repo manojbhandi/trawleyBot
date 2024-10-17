@@ -12,11 +12,11 @@ interface CookieConsentBannerProps {
     customizeCookies: () => void
     closeBanner: () => void
     loading: boolean
-    openCustomBanner:boolean
+    openCustomBanner: boolean
     setOpenCustomBanner: (value: boolean) => void
 }
 export default function CookieConsentBanner(props: CookieConsentBannerProps) {
-    const { acceptAllCookies, rejectAllCookies, customizeCookies, closeBanner, loading , openCustomBanner, setOpenCustomBanner} = props
+    const { acceptAllCookies, rejectAllCookies, customizeCookies, closeBanner, loading, openCustomBanner, setOpenCustomBanner } = props
     // const [openConsentBanner, setOpenConsentBanner] = useState<boolean>(true)
 
     const closeCustomizedConsentBanner = () => {
@@ -49,9 +49,9 @@ export default function CookieConsentBanner(props: CookieConsentBannerProps) {
                         type="button"
                         className=" bg-zinc-300 hover:scale-[.98] ease-in-out transform "
                         style={{ backgroundColor: 'white', color: '#4A6CF7', border: '2px solid #4A6CF7' }}
-                        onClick={() =>{
-                             setOpenCustomBanner(true)
-                             closeBanner()
+                        onClick={() => {
+                            setOpenCustomBanner(true)
+                            closeBanner()
                         }}
                     >
                         Customize
@@ -70,16 +70,17 @@ export default function CookieConsentBanner(props: CookieConsentBannerProps) {
                     </Button>
                 </div>
             </div>
-            {
+            {/* {
                 openCustomBanner ?
                     <CustomizeBanner
                         closeBanner={closeCustomizedConsentBanner}
                         acceptAllCookies={acceptAllCookies}
                         rejectAllCookies={rejectAllCookies}
                         openConsentBanner={openCustomBanner}
+                        
                     />
                     : null
-            }
+            } */}
         </>
     )
 
